@@ -1,0 +1,678 @@
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f6fb;
+    font-family:Pretendard,"Noto Sans KR",sans-serif;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+
+    height:70px;
+
+    background:#6C63FF;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+}
+
+.header h1{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Layout
+=========================== */
+
+.container{
+
+    display:flex;
+
+    min-height:calc(100vh - 70px);
+
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+
+    width:220px;
+
+    background:white;
+
+    border-right:1px solid #e5e5e5;
+
+    padding:25px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:15px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+.sidebar a:hover{
+
+    background:#6C63FF;
+
+    color:white;
+
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.content{
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+/* ===========================
+   Dashboard
+=========================== */
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+    color:#666;
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    font-size:34px;
+
+    color:#6C63FF;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   Search
+=========================== */
+
+.topMenu{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.searchBar input{
+
+    width:350px;
+
+    height:42px;
+
+    padding:0 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+.searchBar input:focus{
+
+    border-color:#6C63FF;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.writeBtn,
+.btnBox button{
+
+    background:#6C63FF;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:11px 22px;
+
+    transition:.2s;
+
+}
+
+.writeBtn:hover,
+.btnBox button:hover{
+
+    background:#574ef5;
+
+}
+
+/* ===========================
+   Popular Board
+=========================== */
+
+.popularBoard{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.popularBoard h3{
+
+    margin-bottom:15px;
+
+}
+
+.popularBoard ul{
+
+    list-style:none;
+
+}
+
+.popularBoard li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.popularBoard li:last-child{
+
+    border:none;
+
+}
+
+.popularBoard a{
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+.popularBoard a:hover{
+
+    color:#6C63FF;
+
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.boardTable{
+
+    width:100%;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.boardTable th{
+
+    background:#6C63FF;
+
+    color:white;
+
+    padding:15px;
+
+    font-size:15px;
+
+}
+
+.boardTable td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+    color:#222;
+
+}
+
+.boardTable tr:hover{
+
+    background:#f7f8ff;
+
+}
+
+.boardTable a{
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+.boardTable a:hover{
+
+    color:#6C63FF;
+
+}
+
+/* ===========================
+   Write / Edit / View
+=========================== */
+
+.writePage,
+.editPage,
+.viewPage{
+
+    width:900px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.writePage h2,
+.editPage h2,
+.viewPage h2{
+
+    margin-bottom:20px;
+
+}
+
+.writePage input,
+.editPage input{
+
+    width:100%;
+
+    height:45px;
+
+    margin-bottom:15px;
+
+    padding:0 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+.writePage textarea,
+.editPage textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    resize:none;
+
+}
+
+.btnBox{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   Pagination
+=========================== */
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.pagination button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ececff;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.pagination button:hover{
+
+    background:#6C63FF;
+
+    color:white;
+
+}
+
+.pagination button.active{
+
+    background:#6C63FF;
+
+    color:white;
+
+}
+
+.pagination button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+/* 태블릿 */
+
+@media screen and (max-width:1024px){
+
+    .dashboard{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .content{
+
+        padding:20px;
+
+    }
+
+}
+
+
+/* 모바일 */
+
+@media screen and (max-width:768px){
+
+    /* 레이아웃 */
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+
+        border-right:none;
+
+        border-bottom:1px solid #ddd;
+
+        padding:15px;
+
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .sidebar li{
+
+        margin:0;
+
+    }
+
+    /* Dashboard */
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* 검색 */
+
+    .topMenu{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:15px;
+
+    }
+
+    .searchBar input{
+
+        width:100%;
+
+    }
+
+    .writeBtn{
+
+        width:100%;
+
+    }
+
+    /* 게시판 */
+
+    .boardTable{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    /* 인기 게시글 */
+
+    .popularBoard li{
+
+        flex-direction:column;
+
+        gap:5px;
+
+    }
+
+    /* 글쓰기 / 수정 / 보기 */
+
+    .writePage,
+    .editPage,
+    .viewPage{
+
+        width:95%;
+
+        padding:20px;
+
+    }
+
+    .btnBox{
+
+        flex-direction:column;
+
+    }
+
+    .btnBox button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* 작은 모바일 */
+
+@media screen and (max-width:480px){
+
+    .header{
+
+        padding:0 15px;
+
+    }
+
+    .header h1{
+
+        font-size:20px;
+
+    }
+
+    .card p{
+
+        font-size:28px;
+
+    }
+
+    .boardTable th,
+    .boardTable td{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+}
